@@ -12,19 +12,42 @@
     <title>Train ticket</title>
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <label for="userDistance">Distance</label>
-            <input type="number" for="userDistance" placeholder="please, enter your travel distance" id="user_distance">
-            <br>
-            <label for="userAge">AGE:</label>
-            <input type="number" for="userAge" placeholder="please, enter your age" id="user_age">
-            <br>
-            <input type="button" value="Send" id="send_btn">
-            <div id="display">
+    <main id="main">
+        <!-- section ticket inputs -->
+        <div class="container">
+            <section class="formbox">
+                
+                <h2>calcola il prezzo del tuo bilgietto</h2>
+                <div class="upper">
 
-            </div>
+                    <div class="name">
+                        <label for="name">Name</label>
+                        <input type="text" for="name" placeholder="please, enter your name" id="name">
+                    </div>
+                    <div class="distance">
+                        <label for="userDistance">Distance</label>
+                        <input type="number" for="userDistance" placeholder="please, enter your travel distance" id="user_distance">
+                    </div>
+                    <div class="age">
+                        <label for="userAge">AGE:</label>
+                        <input type="number" for="userAge" placeholder="please, enter your age" id="user_age">
+                    </div>
+                   
+
+                </div>
+
+                <input type="button" value="Send" id="send_btn">
+                <input type="button" value="Send" id="send_btn">
+            </section>
+            <section class="formbox">
+                <h2>il tuo biglietto</h2>
+                <div id="display">
+
+                </div>
+                
+            </section>
+
         </div>
-    </div>
+    </main>
 </body>
 </html>
