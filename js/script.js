@@ -13,13 +13,17 @@ const discountMinor = 20
 /* immagazzino il valore dello sconto per maggiore età */
 const discountMajor = 40
 
+
+
 /* ----------------------------------------------------------------------------------------------------------- */
 
 let sendBtn = document.getElementById("send_btn")
 
-sendBtn.addEventListener("click", function () {
-	/* chiedo all' utente quanti chilometri ha intenzione di percorrere */
 
+sendBtn.addEventListener("click", function () {
+    let userName = document.getElementById("nameBox").value
+    /* chiedo all' utente quanti chilometri ha intenzione di percorrere */
+    
 	let userDistance = document.getElementById("user_distance").value // EX PROMPT MODIFIED
 
 	if (userDistance === null || userDistance.trim() === "") {
@@ -28,7 +32,7 @@ sendBtn.addEventListener("click", function () {
 		return
 	}
 
-	const distanceNumber = parseFloat(userDistance)
+	distanceNumber = parseFloat(userDistance)
 
 	/* chiedo all' utente la sua età */
 
@@ -71,7 +75,7 @@ sendBtn.addEventListener("click", function () {
 	/* fine. */
 
 	/* mostro a schermo le varie operazioni */
-	document.getElementById("display").innerHTML =
+/* 	document.getElementById("display").innerHTML =
 		"il prezzo iniziale del tuo biglietto è " +
 		initPrice +
 		"€" +
@@ -85,4 +89,18 @@ sendBtn.addEventListener("click", function () {
 		discountValue +
 		"€" +
 		" Goditi il tuo viaggio!"
+ */
+    let random = Math.floor(Math.random() * 100000);
+    let randomsm = Math.floor(Math.random() * 10);
+    
+    document.getElementById("nameDisplay").innerHTML = userName
+    document.getElementById("offerDisplay").innerHTML = whichDiscount
+    
+    document.getElementById("carriageDisplay").innerHTML = randomsm
+    
+    document.getElementById("CPDisplay").innerHTML = random
+
+    document.getElementById("costDisplay").innerHTML = lastPrice
+
+    
 })
