@@ -56,3 +56,13 @@ input{
     justify-content:space-between ;
     flex-wrap: wrap;
 }
+
+.d-none{
+    display: none;
+}
+.display{
+    display: flex;
+}
+#train_tiket{
+    width: 100%;
+}

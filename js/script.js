@@ -28,7 +28,8 @@ sendBtn.addEventListener("click", function () {
 
 	if (userDistance === null || userDistance.trim() === "") {
 		/* Se l'utente ha cliccato "Annulla" o ha lasciato vuoto il campo, esci dal ciclo*/
-		/* INSERIRE MESS DI FEEDBACK SOSTITUTIVO AL MESS DI BUONA RIUSCITA */
+        document.getElementById("error_msg").className ="dispaly"
+		
 		return
 	}
 
@@ -40,6 +41,7 @@ sendBtn.addEventListener("click", function () {
 
 	if (userAge === null || userAge.trim() === "") {
 		/* Se l'utente ha cliccato "Annulla" o ha lasciato vuoto il campo, esci dal ciclo*/
+        document.getElementById("error_msg").className ="dispaly"
 		return
 	}
 
@@ -94,6 +96,7 @@ sendBtn.addEventListener("click", function () {
     let randomsm = Math.floor(Math.random() * 10);
     
     document.getElementById("nameDisplay").innerHTML = userName
+    
     document.getElementById("offerDisplay").innerHTML = whichDiscount
     
     document.getElementById("carriageDisplay").innerHTML = randomsm
@@ -101,6 +104,7 @@ sendBtn.addEventListener("click", function () {
     document.getElementById("CPDisplay").innerHTML = random
 
     document.getElementById("costDisplay").innerHTML = lastPrice
-
+    
+    document.getElementById("train_tiket").className ="dispaly"
     
 })
