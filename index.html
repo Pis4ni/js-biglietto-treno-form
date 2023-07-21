@@ -13,16 +13,16 @@
 </head>
 <body>
     <main id="main">
-        <!-- section ticket inputs -->
+        <!-- div ticket inputs -->
         <div class="container">
-            <section class="formbox">
+            <h2>calcola il prezzo del tuo bilgietto</h2>
+            <div class="formbox text-center">
                 
-                <h2>calcola il prezzo del tuo bilgietto</h2>
                 <div class="upper">
 
                     <div class="name">
                         <label for="name">Name</label>
-                        <input type="text" for="name" placeholder="please, enter your name" id="name">
+                        <input type="text" for="name" placeholder="please, enter your name" id="nameBox">
                     </div>
                     <div class="distance">
                         <label for="userDistance">Distance</label>
@@ -37,15 +37,42 @@
                 </div>
 
                 <input type="button" value="Send" id="send_btn">
-                <input type="button" value="Send" id="send_btn">
-            </section>
-            <section class="formbox">
-                <h2>il tuo biglietto</h2>
-                <div id="display">
+                <input type="reset" value="Annulla" id="cancel_btn">
+            </div>
+            <h2>il tuo biglietto</h2>
+            <div class="formbox">
+                <h3>
+                    dettaglio passeggeri
+                </h3>
+                <div class="tiketPrew">
+                    <div class="greyName">
+                        <h3>nome passeggero</h3>
+                        <div id="nameDisplay"></div>
+                    </div>
 
+                    <div>
+                        <h3>Offerta</h3>
+                        <div id="offerDisplay"></div>
+                    </div>
+
+                    <div>
+                        <h3>Carrozza</h3>
+                        <div id="carriageDisplay"></div>
+                    </div>
+
+                    <div>
+                        <h3>Codice CP</h3>
+                        <div id="CPDisplay"></div>
+                    </div>
+
+                    <div>
+                        <h3>Costo biglietto</h3>
+                        <div id="costDisplay"></div>
+                    </div>
                 </div>
+
                 
-            </section>
+            </div>
 
         </div>
     </main>
